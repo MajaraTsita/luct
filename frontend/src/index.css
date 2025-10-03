@@ -1,0 +1,87 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #003366 !important;
+}
+.navbar-brand, .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+}
+.navbar-brand span {
+  color: #FFD700; /* gold accent */
+}
+
+/* Cards & Forms */
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: none;
+}
+.card-header {
+  background: #003366;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+}
+.form-control:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.3);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #003366;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background-color: #002244;
+}
+.btn-accent {
+  background-color: #FFD700;
+  border: none;
+  color: #003366;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.btn-accent:hover {
+  background-color: #e6c200;
+  color: #fff;
+}
+
+/* Table */
+.table {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.table thead {
+  background: #003366;
+  color: #fff;
+}
+.table tbody tr:hover {
+  background: #fffbe6; /* soft gold highlight */
+}
+
+/* Utility */
+.page-title {
+  color: #003366;
+  font-weight: 700;
+}

@@ -1,0 +1,65 @@
+/* ReportForm Styles */
+.report-form-container {
+    background-color: purple; /* light gray to contrast page background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Headings */
+.report-form-container h3 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Labels */
+.report-form-container label {
+    font-weight: 600;
+    color: #444;
+}
+
+/* Inputs & Textareas */
+.report-form-container .form-control {
+    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.report-form-container .form-control:focus {
+    border-color: #28a745; /* green focus border matches navbar */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.4);
+    outline: none;
+}
+
+/* Buttons */
+.report-form-container .btn-success {
+    background-color: #28a745; /* matches navbar green */
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.report-form-container .btn-success:hover {
+    background-color: #218838; /* slightly darker green on hover */
+    transform: scale(1.02);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .report-form-container {
+        padding: 1.5rem;
+    }
+
+    .report-form-container .btn-success {
+        padding: 0.5rem 1rem;
+        font-size: 0.95rem;
+    }
+}

@@ -26,11 +26,11 @@ sequelize
 // ✅ Import models
 const User = require("./user")(sequelize, DataTypes);
 const Report = require("./report")(sequelize, DataTypes);
-const attendance = require("./attendance")(sequelize, DataTypes);
+const Attendance = require("./attendance")(sequelize, DataTypes); // ✅ fixed variable name
 const Rating = require("./rating")(sequelize, DataTypes);
 const Monitoring = require("./monitoring")(sequelize, DataTypes);
 const Class = require("./Classes")(sequelize, DataTypes);
-const Course = require("./course")(sequelize, DataTypes);   // 👈 FIX: register Course
+const Course = require("./course")(sequelize, DataTypes);
 
 // ✅ Relationships
 
@@ -43,7 +43,7 @@ User.hasMany(Rating, { as: "ratings", foreignKey: "userId" });
 Rating.belongsTo(User, { as: "user", foreignKey: "userId" });
 
 // User → Attendance
-User.hasMany(attendance, { as: "attendances", foreignKey: "userId" });
+User.hasMany(Attendance, { as: "attendances", foreignKey: "userId" });
 Attendance.belongsTo(User, { as: "student", foreignKey: "userId" });
 
 // Course → Class
@@ -63,9 +63,9 @@ module.exports = {
   sequelize,
   User,
   Report,
-  Attendance,
+  Attendance,   // ✅ fixed capitalization
   Rating,
   Monitoring,
   Class,
-  Course,  // 👈 FIX: export Course
+  Course,
 };
